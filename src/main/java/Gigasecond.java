@@ -15,7 +15,8 @@ class Gigasecond {
     }
 
     LocalDateTime getDateTime() {
-      return dateTimePlusGigasecond = dateTime.plusDays(11574).plusHours(1).plusMinutes(46).plusSeconds(40);
+      // return dateTimePlusGigasecond = dateTime.plusDays(11574).plusHours(1).plusMinutes(46).plusSeconds(40);
+      return dateTimePlusGigasecond = dateTime.plusSeconds(1000000000);
     }
 
 }
