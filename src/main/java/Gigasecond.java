@@ -7,7 +7,8 @@ class Gigasecond {
     public static final int GIGASECOND = 1000000000;
 
     Gigasecond(LocalDate birthDate) {
-      dateTime = birthDate.atStartOfDay();
+      this(birthDate.atStartOfDay());
+      // dateTime = birthDate.atStartOfDay();
     }
 
     Gigasecond(LocalDateTime birthDateTime) {
@@ -17,5 +18,4 @@ class Gigasecond {
     LocalDateTime getDateTime() {
       return dateTime.plusSeconds(GIGASECOND);
     }
-
 }
